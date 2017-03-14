@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<a href=""></a>
+	<title>Humbucker</title>
+
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+<!--
+	Barra lateral
+-->
+<nav class="CX Row">
+<input type="checkbox" hidden="hidden" id="Hd-Search">
+<div class="Search">  
+<form action="/search" method="get">
+<input name="q" type="text" id="search-anime" autocomplete="off" placeholder="Buscar...">
+<button><i class="fa-search"></i></button>
+</form>
+<div class="DpdwCnt TtCn">
+<ul class="ListResult"></ul>
+</div>
+</div>
+<div class="Login">
+<input type="checkbox" hidden="hidden" id="DpdwLnk-Login">
+<label for="DpdwLnk-Login" class="Button"><span class="fa-user">Login</span></label>
+<div class="DpdwCnt TtCn">
+<div class="Title">INICIAR SESION</div>
+<form action="/auth/sign_in" class="form-horizontal" method="GET"> <a href="/auth/sign_in"><button type="submit">INICIAR SESION NORMALMENTE</button></a>
+<a href="/auth/facebook/sign_in" class="Button fb_login"><span class="fa-facebook">INICIAR SESION CON FB</span></a>
+<div class="Links">
+<a href="/auth/sign_up">Registrate</a>
+<a href="/auth/password/new">¿Olvidaste tu contraseña?</a>
+</div>
+</form> </div>
+</div>
+<ul class="Menu">
+<li><a href="/">INICIO</a></li>
+<li><a href="/browse">ANIMES</a></li>
+<li><a target="_blank" href="http://serplis.com/">SERPLIS</a></li>
+<li><a rel="no_follow" target="_blank" href="https://bitly.com/2mX9fop">Juegos</a></li>
+</ul>
+<ul class="ListSocial BFixed">
+<li><a href="https://www.facebook.com/AnimeFLV/" target="_blank" class="fa-facebook"></a></li>
+</ul>
+</nav>

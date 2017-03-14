@@ -1,3 +1,14 @@
+/*
+	Todo lo que se encuentra en el encabezado
+*/
+
+header
+{
+	display: block;
+	position: relative;
+	background-color: #7cd7c2;
+}
+
 #usuario
 {
 	display: inline-block;
@@ -12,7 +23,7 @@
 	position: relative;
 	width: 177px;
 	height: 54px;
-	background-color: #FFF;
+	background-color: #7cd7c2;
 	background-image: url(../imagenes/logo.png);
 	background-position: center;
 	background-repeat: no-repeat;
@@ -31,4 +42,125 @@ input[type=text]
 		-moz- transition: width 0.4s ease-in-out;
 			transition: width 0.4s ease-in-out;
 
+}
+
+/*
+	Todo lo que se encuentra en el contenido
+*/
+
+
+/*
+	Segmento de la carta de presentacion del DJ 
+*/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.container a 
+{
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+button:hover, a:hover 
+{
+    opacity: 0.7;
+}
+
+/*
+	Fin del segmento de la carta de presentacion del DJ 
+*/
+
+
+/*
+	Todo lo que se encuentra en el pie de pagina
+*/
+
+footer
+{
+	background-color: #7cd7c2;
+	display: block;
+	position: relative;
+	color: #ffd900;
+}
+
+.popup 
+{
+	position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.popup .textopopup
+{
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+.popup .textopopup::after 
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.popup .show 
+{
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+		-moz-animation: fadeIn 1s;
+			animation: fadeIn 1s
+}
+
+@-webkit-keyframes fadeIn 
+{
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn 
+{
+    from {opacity: 0;}
+    to {opacity:1 ;}
 }
