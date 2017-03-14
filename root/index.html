@@ -21,8 +21,18 @@
 
             <footer>
             <!-- POP UP -->
-                <a href="">Terminos y condiciones</a>
-                <a href="">Quienes somos</a>
+                <div class="popup" onClick="MyFunction()">
+                    <span class="textopopup" id="terminos">Terminos y condiciones</span>
+                    <span class="textopopup" id="somos">Quienes somos</span>
+                </div>
+                <script>
+                // When the user clicks on <div>, open the popup
+                    function myFunction() 
+                    {
+                        var popup = document.getElementById("terminos");
+                        popup.classList.toggle("show");
+                    }
+                </script>
             </footer>
         </main>
     </body>
