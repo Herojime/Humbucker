@@ -38,8 +38,8 @@ input[type=text]
 	position: fixed;
 	width: 45%;	
 	height: 25px;
-	-webkit- transition: width 0.4s ease-in-out;
-		-moz- transition: width 0.4s ease-in-out;
+	-webkit-transition: width 0.4s ease-in-out;
+		-moz-transition: width 0.4s ease-in-out;
 			transition: width 0.4s ease-in-out;
 
 }
@@ -110,50 +110,18 @@ footer
 	color: #ffd900;
 }
 
-footer span 
+footer button
 {
     display: inline-block;
     position: relative;
-    color: #000;
-    
+    margin: 25px;
+    height: auto;
+    width: auto;
+    padding: 5px;
+    border-radius: 5%;
 }
 
-.popup 
-{
-	position: relative;
-    display: inline-block;
-    cursor: pointer;
-}
-
-.popup .textopopup
-{
-    visibility: hidden;
-    width: 160px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -80px;
-}
-
-.popup .textopopup::after 
-{
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
-
-.popup .show 
+.modal .show 
 {
 	visibility: visible;
 	-webkit-animation: fadeIn 1s;
@@ -162,6 +130,12 @@ footer span
 }
 
 @-webkit-keyframes fadeIn 
+{
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@-moz-keyframes fadeIn 
 {
     from {opacity: 0;} 
     to {opacity: 1;}
@@ -190,12 +164,30 @@ footer span
 }
 
 /* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
+.modal-box
+{
     margin: 15% auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+}
+
+.modal-box .modal-header
+{
+    background-color: #7cd7c2;
+    padding: 10px;
+}
+
+.modal-box .modal-content {
+    display: "block";
+    background-color: #fefefe;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.modal-box .modal-footer
+{
+    background-color: #7cd7c2;
+    padding: 10px;
 }
 
 /* The Close Button */
