@@ -1,20 +1,39 @@
+body 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #34394F;
+    color: #FFF;
+}
 /*
 	Todo lo que se encuentra en el encabezado
 */
 
 header
 {
-	display: block;
-	position: relative;
-	background-color: #7cd7c2;
+	display: relative;
+	position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+	background-color: #6970A4;
+    background-position: center;
+    padding: 10px;
+    vertical-align: middle;
+    z-index: 1;
 }
 
 #usuario
 {
 	display: inline-block;
 	position: relative;
-	float: right;
-	margin-top: 23px;
+    margin-left: 50%;
+    width: auto;
+    height: auto;
+	text-decoration: none;
+    color: #fefefe;
+    vertical-align: center;
+    text-align: middle;
+    font-size: 18px;
 }
 
 #logo
@@ -23,12 +42,11 @@ header
 	position: relative;
 	width: 177px;
 	height: 54px;
-	background-color: #7cd7c2;
-	background-image: url(../imagenes/logo.png);
+	background-color: #6970A4;
+	background-image: url(../imagenes/logotipo_neon.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	text-indent: -1000000px;
-	margin-right: 10%;
 }
 
 input[type=text]
@@ -44,10 +62,32 @@ input[type=text]
 
 }
 
+header nav button
+{
+    display: inline-block;
+    position: relative;
+    width: auto;
+    height: auto;
+    background-color: #000;
+    margin-right: 10%;
+    border-radius: 5%;
+}
+
 /*
 	Todo lo que se encuentra en el contenido
 */
+main
+{
+    display: block;
+    position: relative;
+    margin: 80px 14% 0px 14%;
+}
 
+#main 
+{
+     transition: margin-left .5s;
+    padding: 20px;
+}
 
 /*
 	Segmento de la carta de presentacion del DJ 
@@ -104,99 +144,63 @@ button:hover, a:hover
 
 footer
 {
-	background-color: #7cd7c2;
+	background-color: #6970A4;
 	display: block;
-	position: relative;
-	color: #ffd900;
+	position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+	color: #aaa;
+    z-index: 1;
 }
 
-<<<<<<< Updated upstream
+#botones-informativos
+{
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
 footer button
 {
     display: inline-block;
     position: relative;
-    margin: 25px;
+    
+    margin: 10px 25px;
     height: auto;
     width: auto;
     padding: 5px;
     border-radius: 5%;
 }
 
-.modal .show 
-=======
-.popup 
+
+@-webkit-keyframes fadeIn
+
 {
-	position: relative;
-    display: inline-block;
-    cursor: pointer;
+    from {opacity: 0}
+    to {opacity: 1}
 }
 
-.popup .textopopup
+@-moz-keyframes fadeIn
 {
-    visibility: hidden;
-    width: 160px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -80px;
+    from {opacity: 0}
+    to {opacity: 1}
 }
 
-.popup .textopopup::after 
-{
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
 
-.popup .show 
->>>>>>> Stashed changes
+@keyframes fadeIn
 {
-	visibility: visible;
-	-webkit-animation: fadeIn 1s;
-		-moz-animation: fadeIn 1s;
-			animation: fadeIn 1s
+    from {opacity: 0}
+    to {opacity: 1}
 }
-
-@-webkit-keyframes fadeIn 
-{
-    from {opacity: 0;} 
-    to {opacity: 1;}
-}
-
-<<<<<<< Updated upstream
-@-moz-keyframes fadeIn 
-{
-    from {opacity: 0;} 
-    to {opacity: 1;}
-}
-
-=======
->>>>>>> Stashed changes
-@keyframes fadeIn 
-{
-    from {opacity: 0;}
-    to {opacity:1 ;}
-<<<<<<< Updated upstream
-}
-
 
 
  /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 2; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -212,25 +216,22 @@ footer button
     margin: 15% auto; /* 15% from the top and centered */
     border: 1px solid #888;
     width: 60%; /* Could be more or less, depending on screen size */
+    -webkit-animation: fadeIn 0.5s;
+        -moz-animation: fadeIn 0.5s;
+            animation: fadeIn 0.5s;
 }
 
-.modal-box .modal-header
+.modal-box .modal-header, .modal-box .modal-footer
 {
-    background-color: #7cd7c2;
+    background-color: #6970A4;
     padding: 10px;
 }
 
 .modal-box .modal-content {
     display: "block";
-    background-color: #fefefe;
+    background-color: #34394F;
     padding: 20px;
     border: 1px solid #888;
-}
-
-.modal-box .modal-footer
-{
-    background-color: #7cd7c2;
-    padding: 10px;
 }
 
 /* The Close Button */
@@ -246,6 +247,48 @@ footer button
     color: black;
     text-decoration: none;
     cursor: pointer;
-=======
->>>>>>> Stashed changes
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
