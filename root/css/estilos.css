@@ -168,7 +168,9 @@ footer button
     border-radius: 5%;
 }
 
+
 @-webkit-keyframes fadeIn
+
 {
     from {opacity: 0}
     to {opacity: 1}
@@ -180,11 +182,13 @@ footer button
     to {opacity: 1}
 }
 
+
 @keyframes fadeIn
 {
     from {opacity: 0}
     to {opacity: 1}
 }
+
 
  /* The Modal (background) */
 .modal {
