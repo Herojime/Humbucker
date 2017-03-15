@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<a href=""></a>
+	<title>Humbucker</title>
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" id="logo">Logo</a>
+            <a href="usuario.html" id="usuario">Usuario</a>
+            <!-- Falta poner todo el codigo de la barra -->
+            <!-- <button id="btnBarraLateral">Boton</button> -->
+        </nav>
+    </header>
+    <footer>
+
+            <button id="btnTerminos">Terminos y condiciones.</button>
+            <button id="btnQuienes">Quienes somos.</button>
+			
+            <div id="Modal-Terminos" class="modal">
+                <div class="modal-box">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2>Terminos y Condiciones</h2>
+                    </div>
+                    <div class="modal-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem tempora nam cupiditate dignissimos quas qui, numquam. Esse, cum asperiores ipsum voluptates, unde architecto maxime optio facilis debitis, eum eveniet totam.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde esse quaerat tempora fuga animi laboriosam quam consectetur, ipsum repellat iste, similique? Ipsam sapiente dolore, facere ab quam eum fugiat ea!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>Humbucker &copy; Frida Guerrero, Helio Jimenez y Orlando Estrella</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Modal-Quienes" class="modal">
+                <div class="modal-box">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2>Quienes Somos</h2>
+                    </div>
+                    <div class="modal-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem tempora nam cupiditate dignissimos quas qui, numquam. Esse, cum asperiores ipsum voluptates, unde architecto maxime optio facilis debitis, eum eveniet totam.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde esse quaerat tempora fuga animi laboriosam quam consectetur, ipsum repellat iste, similique? Ipsam sapiente dolore, facere ab quam eum fugiat ea!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>Humbucker &copy; Frida Guerrero, Helio Jimenez y Orlando Estrella</h3>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                // Get the modal
+                var modalTerminos = document.getElementById("Modal-Terminos");
+                var modalQuienes = document.getElementById("Modal-Quienes");
+
+                // Get the button that opens the modal
+                var btnTerminos = document.getElementById("btnTerminos");
+                var btnQuienes = document.getElementById("btnQuienes");
+
+                // Get the <span> element that closes the modal
+                var close = document.getElementsByClassName("close");
+
+                // When the user clicks on the button, open the modal
+                btnTerminos.onclick = function() {
+                    modalTerminos.style.display = "block";
+                }
+
+                btnQuienes.onclick = function() {
+                    modalQuienes.style.display = "block";
+                }
+
+                // When the user clicks on <span> (x), close the modal
+                close[0].onclick = function() {
+                    modalTerminos.style.display = "none";
+                }
+                close[1].onclick = function() {
+                    modalQuienes.style.display = "none";
+                }
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                    if (event.target == modalTerminos) {
+                        modalTerminos.style.display = "none";
+                    }
+                    if (event.target == modalQuienes) {
+                        modalQuienes.style.display = "none";
+                    }
+                }
+            </script>
+		</footer>
+
+</body>
+</html>
+
+
+
+<!--
+	Barra lateral
+
+
+<nav class="CX Row">
+<input type="checkbox" hidden="hidden" id="Hd-Search">
+<div class="Search">  
+<form action="/search" method="get">
+<input name="q" type="text" id="search-anime" autocomplete="off" placeholder="Buscar...">
+<button><i class="fa-search"></i></button>
+</form>
+<div class="DpdwCnt TtCn">
+<ul class="ListResult"></ul>
+</div>
+</div>
+<div class="Login">
+<input type="checkbox" hidden="hidden" id="DpdwLnk-Login">
+<label for="DpdwLnk-Login" class="Button"><span class="fa-user">Login</span></label>
+<div class="DpdwCnt TtCn">
+<div class="Title">INICIAR SESION</div>
+<form action="/auth/sign_in" class="form-horizontal" method="GET"> <a href="/auth/sign_in"><button type="submit">INICIAR SESION NORMALMENTE</button></a>
+<a href="/auth/facebook/sign_in" class="Button fb_login"><span class="fa-facebook">INICIAR SESION CON FB</span></a>
+<div class="Links">
+<a href="/auth/sign_up">Registrate</a>
+<a href="/auth/password/new">¿Olvidaste tu contraseña?</a>
+</div>
+</form> </div>
+</div>
+<ul class="Menu">
+<li><a href="/">INICIO</a></li>
+<li><a href="/browse">ANIMES</a></li>
+<li><a target="_blank" href="http://serplis.com/">SERPLIS</a></li>
+<li><a rel="no_follow" target="_blank" href="https://bitly.com/2mX9fop">Juegos</a></li>
+</ul>
+<ul class="ListSocial BFixed">
+<li><a href="https://www.facebook.com/AnimeFLV/" target="_blank" class="fa-facebook"></a></li>
+</ul>
+</nav>
+</nav>
+-->

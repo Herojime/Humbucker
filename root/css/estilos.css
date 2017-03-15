@@ -1,0 +1,244 @@
+body 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #34394F;
+    color: #FFF;
+}
+/*
+	Todo lo que se encuentra en el encabezado
+*/
+
+header
+{
+	display: relative;
+	position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+	background-color: #6970A4;
+    background-position: center;
+    padding: 10px;
+    vertical-align: middle;
+    z-index: 1;
+}
+
+#usuario
+{
+	position: relative;
+    float: right;
+    margin-left: 50%;
+    width: auto;
+    height: auto;
+	text-decoration: none;
+    color: #fefefe;
+    vertical-align: center;
+    text-align: middle;
+    font-size: 18px;
+}
+
+#logo
+{
+	display: inline-block;
+	position: relative;
+	width: 177px;
+	height: 54px;
+	background-color: #6970A4;
+	background-image: url(../imagenes/logotipo_neon.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	text-indent: -1000000px;
+}
+
+input[type=text]
+{
+	margin-top: 15px;
+	display: inline-block;
+	position: fixed;
+	width: 45%;	
+	height: 25px;
+	-webkit-transition: width 0.4s ease-in-out;
+		-moz-transition: width 0.4s ease-in-out;
+			transition: width 0.4s ease-in-out;
+
+}
+
+header nav button
+{
+    display: inline-block;
+    position: relative;
+    width: auto;
+    height: auto;
+    background-color: #000;
+    margin-right: 10%;
+    border-radius: 5%;
+}
+
+/*
+	Todo lo que se encuentra en el contenido
+*/
+main
+{
+    display: block;
+    position: relative;
+    margin: 80px 10% 0px 10%;
+}
+
+/*
+	Segmento de la carta de presentacion del DJ 
+*/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.container a 
+{
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+button:hover, a:hover 
+{
+    opacity: 0.7;
+}
+
+/*
+	Fin del segmento de la carta de presentacion del DJ 
+*/
+
+
+/*
+	Todo lo que se encuentra en el pie de pagina
+*/
+
+footer
+{
+	background-color: #6970A4;
+	display: block;
+	position: relative;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+	color: #aaa;
+    z-index: 1;
+}
+
+footer #botones-informativos
+{
+    display: block;
+    margin: auto;
+    width: 30%;
+}
+
+footer button
+{
+    display: inline-block;
+    position: relative;
+    
+    margin: 10px 25px;
+    height: auto;
+    width: auto;
+    padding: 5px;
+    border-radius: 5%;
+    background-color: transparent;
+}
+
+
+@-webkit-keyframes fadeIn
+
+{
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@-moz-keyframes fadeIn
+{
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+
+@keyframes fadeIn
+{
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+
+ /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-box
+{
+    margin: 15% auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+    -webkit-animation: fadeIn 0.5s;
+        -moz-animation: fadeIn 0.5s;
+            animation: fadeIn 0.5s;
+}
+
+.modal-box .modal-header, .modal-box .modal-footer
+{
+    background-color: #6970A4;
+    padding: 10px;
+}
+
+.modal-box .modal-content {
+    display: "block";
+    background-color: #34394F;
+    padding: 20px;
+    border: 1px solid #888;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
