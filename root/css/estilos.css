@@ -38,8 +38,8 @@ input[type=text]
 	position: fixed;
 	width: 45%;	
 	height: 25px;
-	-webkit- transition: width 0.4s ease-in-out;
-		-moz- transition: width 0.4s ease-in-out;
+	-webkit-transition: width 0.4s ease-in-out;
+		-moz-transition: width 0.4s ease-in-out;
 			transition: width 0.4s ease-in-out;
 
 }
@@ -110,6 +110,20 @@ footer
 	color: #ffd900;
 }
 
+<<<<<<< Updated upstream
+footer button
+{
+    display: inline-block;
+    position: relative;
+    margin: 25px;
+    height: auto;
+    width: auto;
+    padding: 5px;
+    border-radius: 5%;
+}
+
+.modal .show 
+=======
 .popup 
 {
 	position: relative;
@@ -146,6 +160,7 @@ footer
 }
 
 .popup .show 
+>>>>>>> Stashed changes
 {
 	visibility: visible;
 	-webkit-animation: fadeIn 1s;
@@ -159,8 +174,78 @@ footer
     to {opacity: 1;}
 }
 
+<<<<<<< Updated upstream
+@-moz-keyframes fadeIn 
+{
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+=======
+>>>>>>> Stashed changes
 @keyframes fadeIn 
 {
     from {opacity: 0;}
     to {opacity:1 ;}
+<<<<<<< Updated upstream
+}
+
+
+
+ /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-box
+{
+    margin: 15% auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+}
+
+.modal-box .modal-header
+{
+    background-color: #7cd7c2;
+    padding: 10px;
+}
+
+.modal-box .modal-content {
+    display: "block";
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+}
+
+.modal-box .modal-footer
+{
+    background-color: #7cd7c2;
+    padding: 10px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+=======
+>>>>>>> Stashed changes
 }

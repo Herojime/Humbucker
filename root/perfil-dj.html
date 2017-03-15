@@ -1,5 +1,111 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< Updated upstream
+	<head>
+		<meta charset="utf-8">
+		<title>Perfil de DJ - Humbucker</title>
+		<!-- Add icon library -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="css/estilos.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<header>
+            <nav>
+                <a href="index.html" id="logo">Logo</a>
+                <a href="usuario.html" id="usuario">Usuario</a>
+                <!-- Falta poner todo el codigo de la barra -->
+                <button id="btnBarraLateral">Boton</button> 
+            </nav>
+        </header>
+		<main>
+            <div id="DatosDJ">
+                <img src="imagenes/dj.png">
+                <span id="InfoDJ">
+                    <h1>Nombre del Dj</h1>
+                    <p>Informacion Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum recusandae eos pariatur, quos? Fuga a temporibus harum beatae, saepe cum. Expedita ratione dignissimos officia error sequi dolorum quia impedit ea. </p>
+                    <button id="Seguir">Seguir</button>
+                </span>
+
+            </div>
+		</main>
+		<footer>
+            <button id="btnTerminos">Terminos y condiciones.</button>
+            <button id="btnQuienes">Quienes somos.</button>
+			
+            <div id="Modal-Terminos" class="modal">
+                <div class="modal-box">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2>Terminos y Condiciones</h2>
+                    </div>
+                    <div class="modal-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem tempora nam cupiditate dignissimos quas qui, numquam. Esse, cum asperiores ipsum voluptates, unde architecto maxime optio facilis debitis, eum eveniet totam.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde esse quaerat tempora fuga animi laboriosam quam consectetur, ipsum repellat iste, similique? Ipsam sapiente dolore, facere ab quam eum fugiat ea!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>Humbucker &copy; Frida Guerrero, Helio Jimenez y Orlando Estrella</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Modal-Quienes" class="modal">
+                <div class="modal-box">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2>Quienes Somos</h2>
+                    </div>
+                    <div class="modal-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem tempora nam cupiditate dignissimos quas qui, numquam. Esse, cum asperiores ipsum voluptates, unde architecto maxime optio facilis debitis, eum eveniet totam.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde esse quaerat tempora fuga animi laboriosam quam consectetur, ipsum repellat iste, similique? Ipsam sapiente dolore, facere ab quam eum fugiat ea!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>Humbucker &copy; Frida Guerrero, Helio Jimenez y Orlando Estrella</h3>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                // Get the modal
+                var modalTerminos = document.getElementById("Modal-Terminos");
+                var modalQuienes = document.getElementById("Modal-Quienes");
+
+                // Get the button that opens the modal
+                var btnTerminos = document.getElementById("btnTerminos");
+                var btnQuienes = document.getElementById("btnQuienes");
+
+                // Get the <span> element that closes the modal
+                var close = document.getElementsByClassName("close");
+
+                // When the user clicks on the button, open the modal
+                btnTerminos.onclick = function() {
+                    modalTerminos.style.display = "block";
+                }
+
+                btnQuienes.onclick = function() {
+                    modalQuienes.style.display = "block";
+                }
+
+                // When the user clicks on <span> (x), close the modal
+                close[0].onclick = function() {
+                    modalTerminos.style.display = "none";
+                }
+                close[1].onclick = function() {
+                    modalQuienes.style.display = "none";
+                }
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                    if (event.target == modalTerminos) {
+                        modalTerminos.style.display = "none";
+                    }
+                    if (event.target == modalQuienes) {
+                        modalQuienes.style.display = "none";
+                    }
+                }
+            </script>
+		</footer>
+	</body>
+=======
 <head>
 	<meta charset="utf-8">
 	<title>Humbucker</title>
@@ -22,4 +128,5 @@
 		  </div>
 		</div>
 </body>
+>>>>>>> Stashed changes
 </html>
