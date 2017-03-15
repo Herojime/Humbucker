@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/estilos.css">
-        <title>Humbucker</title>
+        <link rel="stylesheet" href="css/estilos-pagina-principal.css" type="text/css">
+        <title>Página Principal - Humbucker</title>
     </head>
     <body>
         <header>
@@ -15,11 +16,79 @@
             </nav>
         </header>
         <main>
-            
-            
-            <div id="contenido">
-                Soy el contenido principal.
+            <div>
+                <div id="musica-compartida" class="cuadro-texto">
+                    <h2>Música que has compartido</h2>
+                    <ul>
+                        <li><a href="cancion.html"> Canción - Autor.</a></li>
+                        <li><a href="cancion.html"> Canción - Autor.</a></li>
+                        <li><a href="cancion.html"> Canción - Autor.</a></li>
+                        <li><a href="cancion.html"> Canción - Autor.</a></li>
+                        <li><a href="cancion.html"> Canción - Autor.</a></li>
+                        <li><a href="cancion.html"> Canción - Autor.</a></li>
+                        <li><a href="cancion.html"> Canción - Autor.</a></li>
+                        <li><a href="cancion.html"> Canción - Autor.</a></li>
+                    </ul>
+                </div>
+                <div id="mas-escuchado" class="cuadro-texto">
+                    <h2>Lo más escuchado</h2>
+                    <a href="cancion.html">Mas escuchada.</a>
+                </div>
             </div>
+
+            <div>
+                <div id="crear-publicacion">
+                    <h2>Crear tu publicación</h2>
+                    <div class="cuadro-texto">
+                        <img src="imagenes/miniatura_fotousuario.png" alt="Usuario">
+                        <textarea rows="3" cols="80">¿Qué estás escuchando?</textarea>
+                    </div>
+                    <button>Preferencias</button>
+                    <div id="separador"></div>
+                    <button>Publicar</button>
+                </div>
+                <div id="ultimas-publicaciones">
+                    <h2>Últimas publicaciones</h2>
+                    <div class="cuadro-texto">
+                        <img src="imagenes/miniatura_fotousuario.png" alt="Usuario">
+                        <p><b>Usuario</b> está escuchando a <a href="perfil-dj.html">DJ.</a></p>
+                    </div>
+                    <div class="cuadro-texto">
+                        <img src="imagenes/miniatura_usuario_artista1.png" alt="Usuario">
+                        <p><b>Usuario</b> está escuchando a <a href="perfil-dj.html">DJ.</a></p>
+                    </div>
+                    <div class="cuadro-texto">
+                        <img src="imagenes/miniatura_DJ.png" alt="Usuario">
+                        <p><b>Usuario</b> acaba de publicar <a href="cancion.html">Canción.</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="cuadro-texto">
+                <h2>También podría gustarte</h2>
+                <div class="sugerencia">
+                    <a class="imagen" id="s1" href="cancion.html">Imagen.</a>
+                    <p>
+                        <a href="cancion.html">Nombre de la Canción.</a><br>
+                        <a href="perfil-dj.html">Artista.</a>
+                    </p>
+                </div>
+                <div class="sugerencia">
+                    <a class="imagen" id="s2" href="perfil-album.html">Imagen.</a>
+                    <p>
+                        <a href="perfil-album.html">Nombre del Album.</a><br>
+                        <a href="perfil-dj.html">Artista.</a>
+                    </p>
+                </div>
+                <div class="sugerencia">
+                    <a class="imagen" id="s3" href="cancion.html">Imagen.</a>
+                    <p>
+                        <a href="cancion.html">Nombre de la Canción.</a><br>
+                        <a href="perfil-dj.html">Artista.</a>
+                    </p>
+                </div>
+            </aside>
+            
         </main>
         <footer>
             <button id="btnTerminos">Terminos y condiciones.</button>

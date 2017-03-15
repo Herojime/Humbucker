@@ -1,0 +1,48 @@
+main div
+{
+    display: block;
+    position: relative;
+}
+
+h1
+{
+    font-weight: 500;
+    padding: 21px 0 0 0;
+}
+
+#imagen-cancion
+{
+    display: inline-block;
+    margin-right: 35px;
+}
+
+#detalles-cancion
+{
+    display: inline-block;
+    height: 276px;
+    vertical-align: top;
+    font-weight: 500;
+}
+
+#reproductor
+{
+    float: right;
+    width: 50%;
+    vertical-align: top;
+}
+
+#informacion
+{
+    display: inline-block;
+    position: relative;
+    width: 36%;
+    vertical-align: top;
+}
+
+#letra
+{
+    display: inline-block;
+    position: relative;
+    width: 36%;
+    text-align: center;
+}

@@ -1,0 +1,179 @@
+main div
+{
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+
+aside
+{
+    position: relative;
+    float: right;
+}
+
+.cuadro-texto
+{
+    display: block;
+    position: relative;
+    background-color: #D1D8ED;
+    color: #37456D;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 5px;
+}
+
+ul
+{
+    list-style-type: none;
+    line-height: 25px; 
+}
+
+#musica-compartida a
+{
+    text-decoration: none;
+    padding: 5px;
+}
+
+#musica-compartida a:hover
+{
+    background-color: #FFF;
+}
+
+#mas-escuchado
+{
+    text-align: center;
+}
+
+#mas-escuchado a
+{
+    display: inline-block;
+    position: relative;
+    width: 221px;
+	height: 221px;
+	background-color: #D1D8ED;
+	background-image: url(../imagenes/busqueda_3.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	text-indent: -1000000px;
+    margin-bottom: 15px;
+}
+
+#crear-publicacion 
+{
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+#separador
+{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    background-color: #D1D8ED;
+    border-radius: 5%;
+}
+
+.cuadro-texto img
+{
+    display: inline-block;
+    margin: 10px;
+    vertical-align: top;
+}
+
+#crear-publicacion textarea
+{
+    width: auto;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #5B5B5B;
+    background-color: #D1D8ED; 
+    vertical-align: top;
+    border: none;
+    border-color: transparent;
+    resize: none;
+    overflow: auto;
+    margin: 20px 10px;
+}
+
+#crear-publicacion button
+{
+    float: right;
+    width: auto;
+    height: auto;
+    margin: 10px;
+    background-color: #8591C9;
+    color: #FFF;
+}
+
+#ultimas-publicaciones
+{
+    display: block;
+    padding: 15px;
+}
+
+#ultimas-publicaciones p
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.sugerencia
+{
+    display: block;
+    position: relative;
+}
+
+.sugerencia p
+{
+    display: inline-block;
+
+}
+
+.sugerencia a
+{
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    text-decoration: none;
+    color: #37456D;
+    padding: 5px;
+}
+
+.sugerencia a:hover
+{
+    background-color: #D1D8ED;
+}
+
+.imagen
+{
+    display: inline-block;
+    position: relative;
+    width: 111px;
+	height: 111px;
+	background-color: #D1D8ED;
+	text-indent: -1000000px;
+    margin-bottom: 15px;
+}
+
+#s1
+{
+	background-image: url(../imagenes/imagen_album_3.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#s2
+{
+	background-image: url(../imagenes/imagen_album_2.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#s3
+{
+	background-image: url(../imagenes/imagen_album_1.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
