@@ -3,21 +3,54 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/busqueda.css">
 	<title>Humbucker</title>
-
 </head>
+
 <body>
+	  <header>
+            <nav>
+                <a href="index.html" id="logo">Logo</a>
+                <a href="usuario.html" id="usuario">Usuario</a>
+                <!-- Falta poner todo el codigo de la barra -->
+                <!-- <button id="btnBarraLateral">Boton</button> -->
+            </nav>
+        </header>
+	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="#">About</a>
+	  <a href="#">Services</a>
+	  <a href="#">Clients</a>
+	  <a href="#">Contact</a>
+	</div>
 
-    <header>
-        <nav>
-            <a href="index.html" id="logo">Logo</a>
-            <a href="usuario.html" id="usuario">Usuario</a>
-            <!-- Falta poner todo el codigo de la barra -->
-            <!-- <button id="btnBarraLateral">Boton</button> -->
-        </nav>
-    </header>
-    <footer>
+	<!-- Use any element to open the sidenav -->
+	<span onclick="openNav()">open</span>
 
+	<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+	<div id="main">
+	  ...
+	</div>
+
+	<script type="text/javascript">
+		/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+	function openNav() {
+	    document.getElementById("mySidenav").style.width = "250px";
+	    document.getElementById("main").style.marginLeft = "250px";
+	    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+	}
+
+	/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+	function closeNav() {
+	    document.getElementById("mySidenav").style.width = "0";
+	    document.getElementById("main").style.marginLeft = "0";
+	    document.body.style.backgroundColor = "white";
+	}
+	</script>
+
+	<main></main>
+
+	        <footer>
             <button id="btnTerminos">Terminos y condiciones.</button>
             <button id="btnQuienes">Quienes somos.</button>
 			
@@ -93,49 +126,5 @@
                 }
             </script>
 		</footer>
-
 </body>
 </html>
-
-
-
-<!--
-	Barra lateral
-
-
-<nav class="CX Row">
-<input type="checkbox" hidden="hidden" id="Hd-Search">
-<div class="Search">  
-<form action="/search" method="get">
-<input name="q" type="text" id="search-anime" autocomplete="off" placeholder="Buscar...">
-<button><i class="fa-search"></i></button>
-</form>
-<div class="DpdwCnt TtCn">
-<ul class="ListResult"></ul>
-</div>
-</div>
-<div class="Login">
-<input type="checkbox" hidden="hidden" id="DpdwLnk-Login">
-<label for="DpdwLnk-Login" class="Button"><span class="fa-user">Login</span></label>
-<div class="DpdwCnt TtCn">
-<div class="Title">INICIAR SESION</div>
-<form action="/auth/sign_in" class="form-horizontal" method="GET"> <a href="/auth/sign_in"><button type="submit">INICIAR SESION NORMALMENTE</button></a>
-<a href="/auth/facebook/sign_in" class="Button fb_login"><span class="fa-facebook">INICIAR SESION CON FB</span></a>
-<div class="Links">
-<a href="/auth/sign_up">Registrate</a>
-<a href="/auth/password/new">¿Olvidaste tu contraseña?</a>
-</div>
-</form> </div>
-</div>
-<ul class="Menu">
-<li><a href="/">INICIO</a></li>
-<li><a href="/browse">ANIMES</a></li>
-<li><a target="_blank" href="http://serplis.com/">SERPLIS</a></li>
-<li><a rel="no_follow" target="_blank" href="https://bitly.com/2mX9fop">Juegos</a></li>
-</ul>
-<ul class="ListSocial BFixed">
-<li><a href="https://www.facebook.com/AnimeFLV/" target="_blank" class="fa-facebook"></a></li>
-</ul>
-</nav>
-</nav>
--->
