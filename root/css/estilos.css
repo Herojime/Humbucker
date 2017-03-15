@@ -1,20 +1,36 @@
+body 
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
 /*
 	Todo lo que se encuentra en el encabezado
 */
 
 header
 {
-	display: block;
-	position: relative;
-	background-color: #7cd7c2;
+	display: relative;
+	position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+	background-color: #6970A4;
+    background-position: center;
+    padding: 10px;
+    vertical-align: middle;
 }
 
 #usuario
 {
 	display: inline-block;
 	position: relative;
-	float: right;
-	margin-top: 23px;
+    margin-left: 50%;
+    width: auto;
+    height: auto;
+	text-decoration: none;
+    color: #fefefe;
+    vertical-align: center;
+    text-align: middle;
+    font-size: 18px;
 }
 
 #logo
@@ -23,12 +39,11 @@ header
 	position: relative;
 	width: 177px;
 	height: 54px;
-	background-color: #7cd7c2;
-	background-image: url(../imagenes/logo.png);
+	background-color: #6970A4;
+	background-image: url(../imagenes/logotipo_neon.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	text-indent: -1000000px;
-	margin-right: 10%;
 }
 
 input[type=text]
@@ -44,10 +59,26 @@ input[type=text]
 
 }
 
+header nav button
+{
+    display: inline-block;
+    position: relative;
+    width: auto;
+    height: auto;
+    background-color: #000;
+    margin-right: 10%;
+    border-radius: 5%;
+}
+
 /*
 	Todo lo que se encuentra en el contenido
 */
-
+main
+{
+    display: block;
+    position: relative;
+    margin: 80px 10% 0px 10%;
+}
 
 /*
 	Segmento de la carta de presentacion del DJ 
@@ -104,17 +135,25 @@ button:hover, a:hover
 
 footer
 {
-	background-color: #7cd7c2;
+	background-color: #6970A4;
 	display: block;
 	position: relative;
 	color: #ffd900;
 }
 
-<<<<<<< Updated upstream
+#botones-informativos
+{
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
 footer button
 {
     display: inline-block;
     position: relative;
+    
     margin: 25px;
     height: auto;
     width: auto;
@@ -122,74 +161,26 @@ footer button
     border-radius: 5%;
 }
 
-.modal .show 
-=======
-.popup 
+
+@-webkit-keyframes fadeIn
+
 {
-	position: relative;
-    display: inline-block;
-    cursor: pointer;
+    from {opacity: 0}
+    to {opacity: 1}
 }
 
-.popup .textopopup
+@-moz-keyframes fadeIn
 {
-    visibility: hidden;
-    width: 160px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -80px;
+    from {opacity: 0}
+    to {opacity: 1}
 }
 
-.popup .textopopup::after 
-{
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
 
-.popup .show 
->>>>>>> Stashed changes
+@keyframes fadeIn
 {
-	visibility: visible;
-	-webkit-animation: fadeIn 1s;
-		-moz-animation: fadeIn 1s;
-			animation: fadeIn 1s
+    from {opacity: 0}
+    to {opacity: 1}
 }
-
-@-webkit-keyframes fadeIn 
-{
-    from {opacity: 0;} 
-    to {opacity: 1;}
-}
-
-<<<<<<< Updated upstream
-@-moz-keyframes fadeIn 
-{
-    from {opacity: 0;} 
-    to {opacity: 1;}
-}
-
-=======
->>>>>>> Stashed changes
-@keyframes fadeIn 
-{
-    from {opacity: 0;}
-    to {opacity:1 ;}
-<<<<<<< Updated upstream
-}
-
 
 
  /* The Modal (background) */
@@ -212,11 +203,14 @@ footer button
     margin: 15% auto; /* 15% from the top and centered */
     border: 1px solid #888;
     width: 60%; /* Could be more or less, depending on screen size */
+    -webkit-animation: fadeIn 0.5s;
+        -moz-animation: fadeIn 0.5s;
+            animation: fadeIn 0.5s;
 }
 
 .modal-box .modal-header
 {
-    background-color: #7cd7c2;
+    background-color: #6970A4;
     padding: 10px;
 }
 
@@ -229,7 +223,7 @@ footer button
 
 .modal-box .modal-footer
 {
-    background-color: #7cd7c2;
+    background-color: #6970A4;
     padding: 10px;
 }
 
@@ -246,6 +240,4 @@ footer button
     color: black;
     text-decoration: none;
     cursor: pointer;
-=======
->>>>>>> Stashed changes
 }
