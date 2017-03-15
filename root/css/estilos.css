@@ -1,6 +1,8 @@
 body 
 {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #34394F;
+    color: #FFF;
 }
 /*
 	Todo lo que se encuentra en el encabezado
@@ -17,6 +19,7 @@ header
     background-position: center;
     padding: 10px;
     vertical-align: middle;
+    z-index: 1;
 }
 
 #usuario
@@ -77,7 +80,7 @@ main
 {
     display: block;
     position: relative;
-    margin: 80px 10% 0px 10%;
+    margin: 80px 14% 0px 14%;
 }
 
 /*
@@ -137,8 +140,12 @@ footer
 {
 	background-color: #6970A4;
 	display: block;
-	position: relative;
-	color: #ffd900;
+	position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+	color: #aaa;
+    z-index: 1;
 }
 
 #botones-informativos
@@ -154,7 +161,7 @@ footer button
     display: inline-block;
     position: relative;
     
-    margin: 25px;
+    margin: 10px 25px;
     height: auto;
     width: auto;
     padding: 5px;
@@ -187,7 +194,7 @@ footer button
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 2; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -208,7 +215,7 @@ footer button
             animation: fadeIn 0.5s;
 }
 
-.modal-box .modal-header
+.modal-box .modal-header, .modal-box .modal-footer
 {
     background-color: #6970A4;
     padding: 10px;
@@ -216,15 +223,9 @@ footer button
 
 .modal-box .modal-content {
     display: "block";
-    background-color: #fefefe;
+    background-color: #34394F;
     padding: 20px;
     border: 1px solid #888;
-}
-
-.modal-box .modal-footer
-{
-    background-color: #6970A4;
-    padding: 10px;
 }
 
 /* The Close Button */
