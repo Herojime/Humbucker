@@ -3,6 +3,7 @@ main div
     display: inline-block;
     position: relative;
     vertical-align: top;
+    margin: auto;
 }
 
 aside

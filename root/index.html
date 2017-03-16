@@ -13,12 +13,13 @@
                 <a href="usuario.html" id="usuario">Usuario</a>
                 <!-- Falta poner todo el codigo de la barra -->
                 <!-- <button id="btnBarraLateral">Boton</button> -->
-                <span onclick="openNav()">Menu</span>
+                <span onclick="openNav()"><img src="imagenes/menu.png"></span>
             </nav>
         </header>
        
         <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <img src="imagenes/Logotipo_neon.png" alt="logotipo">
       <input type="search" name="buscador" placeholder="Buscar...">
       <a href="perfil-dj.html">Usuario</a>
       <a href="registro-inicio.html">Cerrar sesion</a>
@@ -50,7 +51,7 @@
                     <h2>Crear tu publicación</h2>
                     <div class="cuadro-texto">
                         <img src="imagenes/miniatura_fotousuario.png" alt="Usuario">
-                        <textarea rows="3" cols="80">¿Qué estás escuchando?</textarea>
+                        <textarea rows="3" cols="80" placeholder="¿Qué estás escuchando?"></textarea>
                     </div>
                     <button>Preferencias</button>
                     <div id="separador"></div>
@@ -97,7 +98,7 @@
                     </p>
                 </div>
             </aside>
-            
+
         </main>
         
     <script type="text/javascript">
@@ -118,9 +119,11 @@
 
 
         <footer>
-            <button id="btnTerminos">Terminos y condiciones.</button>
-            <button id="btnQuienes">Quienes somos.</button>
-			
+            <div id="botones-informativos">
+                <button id="btnTerminos">Terminos y condiciones.</button>
+                <button id="btnQuienes">Quienes somos.</button>
+            </div>
+            
             <div id="Modal-Terminos" class="modal">
                 <div class="modal-box">
                     <div class="modal-header">
