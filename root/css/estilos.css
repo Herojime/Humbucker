@@ -4,9 +4,6 @@ body
     background-color: #34394F;
     color: #FFF;
 }
-/*
-	Todo lo que se encuentra en el encabezado
-*/
 
 header
 {
@@ -24,9 +21,10 @@ header
 
 #usuario
 {
-	position: relative;
-    float: right;
-    margin-left: 50%;
+	position: absolute;
+    right: 75px;
+    top: 28px;
+    margin-left: 72%;
     width: auto;
     height: auto;
 	text-decoration: none;
@@ -40,8 +38,8 @@ header
 {
 	display: inline-block;
 	position: relative;
-	width: 196px;
-	height: 50px;
+	width: 53px;
+	height: 52px;
 	background-color: #6970A4;
 	background-image: url(../imagenes/logo.png);
 	background-position: center;
@@ -133,15 +131,6 @@ button:hover, a:hover
     opacity: 0.7;
 }
 
-/*
-	Fin del segmento de la carta de presentacion del DJ 
-*/
-
-
-/*
-	Todo lo que se encuentra en el pie de pagina
-*/
-
 footer
 {
 	background-color: #6970A4;
@@ -151,7 +140,6 @@ footer
     left: 0px;
     right: 0px;
 	color: #aaa;
-    z-index: 1;
 }
 
 footer #botones-informativos
@@ -194,6 +182,49 @@ footer button
     from {opacity: 0}
     to {opacity: 1}
 }
+
+
+fieldset, label { margin: 0; padding: 0; }
+body{ margin: 20px; }
+h1 { font-size: 1.5em; margin: 10px; }
+
+/****** Style Star Rating Widget *****/
+
+.rating { 
+  border: none;
+  float: left;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
 
 
  /* The Modal (background) */
@@ -264,7 +295,7 @@ footer button
 }
 
 /* The navigation menu links */
-.sidenav a {
+.sidenav a, input[type=search], img {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -299,6 +330,8 @@ footer button
 #menu-imagen
 {
     position:absolute;
+    width: 52px; 
+    height: 52px;
     display: inline-block;
     right: 0;
 }
