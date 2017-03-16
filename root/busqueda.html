@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-	<link rel="stylesheet" type="text/css" href="css/busqueda.css">
+    <link rel="stylesheet" href="css/estilos-pagina-principal.css" type="text/css">
 	<title>Humbucker</title>
 </head>
 
@@ -12,25 +12,19 @@
             <nav>
                 <a href="index.html" id="logo">Logo</a>
                 <a href="usuario.html" id="usuario">Usuario</a>
-                <!-- Falta poner todo el codigo de la barra -->
-                <!-- <button id="btnBarraLateral">Boton</button> -->
+                <span onclick="openNav()"><img src="imagenes/menu.png" id="menu-imagen"></span>
             </nav>
         </header>
 	<div id="mySidenav" class="sidenav">
-	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	  <a href="#">About</a>
-	  <a href="#">Services</a>
-	  <a href="#">Clients</a>
-	  <a href="#">Contact</a>
-	</div>
+	   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	   <img src="imagenes/Logotipo_neon.png" alt="logotipo">
+        <a href="busqueda.html"> Buscar</a>
+        <a href="registro-inicio.html">Cerrar sesion</a>
+        	
+    </div>
 
 	<!-- Use any element to open the sidenav -->
 	<span onclick="openNav()">open</span>
-
-	<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-	<div id="main">
-	  ...
-	</div>
 
 	<script type="text/javascript">
 		/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
@@ -48,7 +42,49 @@
 	}
 	</script>
 
-	<main></main>
+	<main>
+     
+      <div id="ultimas-publicaciones">
+             <h2>Listado de canciones</h2>
+                    <div class="cuadro-texto">
+                        <img src="imagenes/miniatura_fotousuario.png" alt="Usuario">
+                        <p><b>Usuario</b> está escuchando a <a href="perfil-dj.html">DJ.</a></p>
+                    </div>
+                    <div class="cuadro-texto">
+                        <img src="imagenes/miniatura_usuario_artista1.png" alt="Usuario">
+                        <p><b>Usuario</b> está escuchando a <a href="perfil-dj.html">DJ.</a></p>
+                    </div>
+                    <div class="cuadro-texto">
+                        <img src="imagenes/miniatura_DJ.png" alt="Usuario">
+                        <p><b>Usuario</b> acaba de publicar <a href="cancion.html">Canción.</a></p>
+                    </div>
+               </div>       
+
+            <aside class="cuadro-texto">
+                <h2>Filtros</h2>
+                <div class="sugerencia">
+                    <a class="imagen" id="s1" href="cancion.html">Imagen.</a>
+                    <p>
+                        <a href="cancion.html">Nombre de la Canción.</a><br>
+                        <a href="perfil-dj.html">Artista.</a>
+                    </p>
+                </div>
+                <div class="sugerencia">
+                    <a class="imagen" id="s2" href="perfil-album.html">Imagen.</a>
+                    <p>
+                        <a href="perfil-album.html">Nombre del Album.</a><br>
+                        <a href="perfil-dj.html">Artista.</a>
+                    </p>
+                </div>
+                <div class="sugerencia">
+                    <a class="imagen" id="s3" href="cancion.html">Imagen.</a>
+                    <p>
+                        <a href="cancion.html">Nombre de la Canción.</a><br>
+                        <a href="perfil-dj.html">Artista.</a>
+                    </p>
+                </div>
+            </aside>   
+    </main>
 
 	        <footer>
             <button id="btnTerminos">Terminos y condiciones.</button>
