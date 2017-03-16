@@ -1,0 +1,116 @@
+body
+{
+    background-image: url(../imagenes/pantella_registro.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+header form
+{
+    position: relative;
+    float: right;
+}
+
+header form div
+{
+    position: relative;
+    display: inline-block;
+}
+
+header input[type=text], header input[type=password]
+{
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 10px 20px;
+    color:#111;
+    font-size: 16px;
+    background-color: #fff;
+    border: 1px solid #37456D;
+    resize: none;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 10px;
+    vertical-align: center;
+    margin: auto;
+}
+
+header nav form button
+{
+    position: relative;
+    display: inline-block;
+    width: auto;
+    padding: 10px 20px;
+    background-color: #37456D;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+main form
+{
+    display: block;
+    position: absolute;
+    width: 40%;
+    right: 0;
+    margin: 10px;
+}
+
+main input[type=text], main input[type=password]
+{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 10px 20px;
+    color:#111;
+    font-size: 16px;
+    background-color: #fff;
+    border: 1px solid #37456D;
+    margin-bottom: 20px;
+    resize: none;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+input[type=radio]
+{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+}
+
+
+.derecha {
+    display: block;
+    margin: 20px 0;
+    text-align: right;
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    padding: 10px 20px;
+    background-color: #37456D;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+footer
+{
+    position: absolute;
+    bottom: 0;
+}
