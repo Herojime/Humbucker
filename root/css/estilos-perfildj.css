@@ -15,14 +15,14 @@ main {
 
 h1 {
 	margin: 0px 10px 0px 12px;
-	color: #fff;
+	color: #D1D8ED;
 		cursor: default;
 		font-size:  30px;
 	   } 
 
 p{
 	margin: 20px 100px 25px 0px;
-	color: #fff;
+	color: #D1D8ED;
 		cursor: default;
 		font-size:  15px;
  	}
@@ -49,6 +49,8 @@ button {
     display: inline-block;
     margin: 0;
     text-align: left;
+	padding: 5px;
+	border-radius: 15px;
 }
 
 #img {
@@ -62,9 +64,12 @@ button {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 520px;
      display: inline-block;
-    margin-right: auto;
+    margin-left: 50px;
+	margin-right: 50px;
     vertical-align: top;
     text-align: left;
+	padding: 5px;
+	border-radius: 15px;
 }
 
 #album_1{
@@ -89,6 +94,8 @@ button {
     display: inline-block;
     vertical-align: top;
     text-align: left;
+	padding: 5px;
+	border-radius: 15px;
 }
 
 #imagen{
@@ -100,4 +107,10 @@ button {
 	margin: 15px;
 	 float:left;
 	 width: 100px;
+}
+
+main div
+{
+	background-color: #222633;
+	color: #37456D;
 }

@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
     <link rel="stylesheet" href="css/estilos-pagina-principal.css" type="text/css">
+    <link rel="stylesheet" href="css/busqueda.css" type="text/css">
 	<title>Humbucker</title>
 </head>
 
@@ -11,7 +12,7 @@
 	  <header>
             <nav>
                 <a href="index.html" id="logo">Logo</a>
-                <a href="usuario.html" id="usuario">Usuario</a>
+                <a href="perfil-dj.html" id="usuario">Usuario</a>
                 <span onclick="openNav()"><img src="imagenes/menu.png" id="menu-imagen"></span>
             </nav>
         </header>
@@ -19,6 +20,7 @@
 	   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 	   <img src="imagenes/Logotipo_neon.png" alt="logotipo">
         <a href="busqueda.html"> Buscar</a>
+        <a href="subir-cancion.html">Subir canción</a>
         <a href="registro-inicio.html">Cerrar sesion</a>
         	
     </div>
@@ -47,49 +49,56 @@
       <div id="ultimas-publicaciones">
              <h2>Listado de canciones</h2>
                     <div class="cuadro-texto">
-                        <img src="imagenes/miniatura_fotousuario.png" alt="Usuario">
-                        <p><b>Usuario</b> está escuchando a <a href="perfil-dj.html">DJ.</a></p>
+                        <img src="imagenes/miniatura_imagen_album_1.png" alt="Usuario">
+                        <p><a href="cancion.html">Resultado 1</a><br>
+                        Informacion Informacion Informacion Informacion</p>
+                        <img src="imagenes/estrellas_puntuacion.png" alt="">
                     </div>
                     <div class="cuadro-texto">
-                        <img src="imagenes/miniatura_usuario_artista1.png" alt="Usuario">
-                        <p><b>Usuario</b> está escuchando a <a href="perfil-dj.html">DJ.</a></p>
+                        <img src="imagenes/miniatura_imagen_album_2.png" alt="Usuario">
+                        <p><a href="cancion.html">Resultado 2</a><br>
+                        Informacion Informacion Informacion Informacion</p>
+                        <img src="imagenes/estrellas_puntuacion.png" alt="">
                     </div>
                     <div class="cuadro-texto">
-                        <img src="imagenes/miniatura_DJ.png" alt="Usuario">
-                        <p><b>Usuario</b> acaba de publicar <a href="cancion.html">Canción.</a></p>
-                    </div>
-               </div>       
+                        <img src="imagenes/miniatura_imagen_album_3.png" alt="Usuario">
+                        <p><a href="cancion.html">Resultado 3</a><br>
+                        Informacion Informacion Informacion Informacion</p>
+                        <img src="imagenes/estrellas_puntuacion.png" alt="">
+                  </div>
+            </div>       
 
+        <div>
             <aside class="cuadro-texto">
                 <h2>Filtros</h2>
-                <div class="sugerencia">
-                    <a class="imagen" id="s1" href="cancion.html">Imagen.</a>
-                    <p>
-                        <a href="cancion.html">Nombre de la Canción.</a><br>
-                        <a href="perfil-dj.html">Artista.</a>
-                    </p>
-                </div>
-                <div class="sugerencia">
-                    <a class="imagen" id="s2" href="perfil-album.html">Imagen.</a>
-                    <p>
-                        <a href="perfil-album.html">Nombre del Album.</a><br>
-                        <a href="perfil-dj.html">Artista.</a>
-                    </p>
-                </div>
-                <div class="sugerencia">
-                    <a class="imagen" id="s3" href="cancion.html">Imagen.</a>
-                    <p>
-                        <a href="cancion.html">Nombre de la Canción.</a><br>
-                        <a href="perfil-dj.html">Artista.</a>
-                    </p>
-                </div>
+                <form>
+                    <input type="checkbox" name="electro" value="electro">Electro<br>
+                    <input type="checkbox" name="techno" value="techno">Techno<br>
+                    <input type="checkbox" name="brostep" value="brostep">brostep<br>
+                    <input type="checkbox" name="music" value="music">Musichouse<br>
+                    <input type="checkbox" name="techno" value="techno">Techno<br>
+                    <input type="checkbox" name="brostep" value="brostep">brostep<br>
+                    <input type="checkbox" name="music" value="music">Musichouse<br>
+                    <input type="checkbox" name="electro" value="electro">Electro<br>
+                    <input type="checkbox" name="techno" value="techno">Techno<br>
+                    <input type="checkbox" name="brostep" value="brostep">brostep<br>
+                    <input type="checkbox" name="music" value="music">Musichouse<br>
+                    <input type="checkbox" name="techno" value="techno">Techno<br>
+                    <input type="checkbox" name="brostep" value="brostep">brostep<br>
+                    <input type="checkbox" name="music" value="music">Musichouse<br>
+                    <div>
+                        <button><a href="busqueda.html">Aplicar</a></button>
+                    </div>
+                </form>
             </aside>   
+        </div>
     </main>
 
 	        <footer>
-            <button id="btnTerminos">Terminos y condiciones.</button>
-            <button id="btnQuienes">Quienes somos.</button>
-			
+            <div id="botones-informativos">
+                <button id="btnTerminos">Terminos y condiciones.</button>
+                <button id="btnQuienes">Quienes somos.</button>
+            </div>
             <div id="Modal-Terminos" class="modal">
                 <div class="modal-box">
                     <div class="modal-header">

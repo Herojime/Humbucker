@@ -12,11 +12,38 @@
 		<header>
             <nav>
                 <a href="index.html" id="logo">Logo</a>
-                <a href="usuario.html" id="usuario">Usuario</a>
-                <!-- Falta poner todo el codigo de la barra -->
-                <!-- <button id="btnBarraLateral">Boton</button> -->
+                <a href="perfil-dj.html" id="usuario">Usuario</a>
+                <span onclick="openNav()"><img src="imagenes/menu.png" id="menu-imagen"></span>
             </nav>
         </header>
+
+<div id="mySidenav" class="sidenav">
+	   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	   <img src="imagenes/Logotipo_neon.png" alt="logotipo">
+        <a href="busqueda.html"> Buscar</a>
+        <a href="registro-inicio.html">Cerrar sesion</a>
+        	
+    </div>
+
+	<!-- Use any element to open the sidenav -->
+	<span onclick="openNav()">open</span>
+
+	<script type="text/javascript">
+		/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+	function openNav() {
+	    document.getElementById("mySidenav").style.width = "250px";
+	    document.getElementById("main").style.marginLeft = "250px";
+	    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+	}
+
+	/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+	function closeNav() {
+	    document.getElementById("mySidenav").style.width = "0";
+	    document.getElementById("main").style.marginLeft = "0";
+	    document.body.style.backgroundColor = "white";
+	}
+	</script>
+
 		<main>
             <h1>Canción</h1>
             <div>
