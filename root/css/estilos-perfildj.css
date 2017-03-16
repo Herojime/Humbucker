@@ -3,7 +3,7 @@
 main {
 	display: block;
     position: relative;
-    margin: 100px 10% 200px 10%;
+    margin: 80px 10% 200px 70px;
  	
 }
 
@@ -14,28 +14,20 @@ main {
 }
 
 h1 {
-	margin: 100px 0px 0px 350px;
-	color: #000000;
+	margin: 0px 10px 0px 12px;
+	color: #fff;
 		cursor: default;
 		font-size:  30px;
 	   } 
 
 p{
-	margin: 20px 100px 0px 350px;
-	color: #000000;
+	margin: 20px 100px 25px 0px;
+	color: #fff;
 		cursor: default;
 		font-size:  15px;
  	}
 
 
-#img {
-	margin: -100px 30px 100px 300px;
-	width: 25%;
-	height: 25%;
-    position: relative;
-    display: inline-block;
-    padding: 5px;
-}
 
 button {
 	margin: 20px 100px 0px 0px;
@@ -44,4 +36,68 @@ button {
 	display:inline-block;
 }
 
+button {
+	margin: 0px 100px 0px 0px;
+	width: auto;
+	border-radius: 8px;
+	display:inline-block;
+}
 
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    display: inline-block;
+    margin: 0;
+    text-align: left;
+}
+
+#img {
+	margin: 15px;
+    margin-right: auto;
+	width:200px;
+}
+
+
+.card2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 520px;
+     display: inline-block;
+    margin-right: auto;
+    vertical-align: top;
+    text-align: left;
+}
+
+#album_1{
+	margin: 15px;
+	 float:left;
+	 width:100px;
+}
+#album_2{
+	margin: 15px;
+	 float:left;
+	 width: 100px;
+}
+#album_3{
+	 margin: 15px;
+	 float:left;
+	 width:100px;
+}
+
+.card3 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+
+#imagen{
+	margin: 15px;
+	 float:left;
+	 width:100px;
+}
+#imagen2{
+	margin: 15px;
+	 float:left;
+	 width: 100px;
+}
