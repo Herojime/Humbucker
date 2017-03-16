@@ -1,0 +1,57 @@
+
+
+main {
+	display: block;
+    position: relative;
+    margin: 100px 10% 200px 10%;
+ 	
+}
+
+#derecha{
+	display: inline-block;
+	margin: 20px 0;
+	text-align: right; 
+}
+
+h1 {
+	margin: 100px 0px 0px 350px;
+	color: #000000;
+		cursor: default;
+		font-size:  30px;
+	   } 
+
+p{
+	margin: 20px 100px 0px 350px;
+	color: #000000;
+		cursor: default;
+		font-size:  15px;
+ 	}
+
+
+#img {
+	margin: -100px 30px 100px 300px;
+	width: 25%;
+	height: 25%;
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+}
+
+#img2 {
+	margin: 20px 100px 0px 400px;
+	width: 13%;
+	height: 13%;
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+    
+}
+
+button {
+	margin: 20px 100px 0px 0px;
+	width: auto;
+	border-radius: 8px;
+	display:inline-block;
+}
+
+
