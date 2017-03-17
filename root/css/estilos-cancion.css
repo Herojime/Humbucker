@@ -1,7 +1,23 @@
+body
+{
+    background-image: url(../imagenes/fondo_3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 main div
 {
     display: block;
     position: relative;
+    color: #D1D8ED;
+
+    width: auto;
+    display: inline-block;
+	padding: 10px;
+	border-radius: 15px;
+    position: relative;
+    margin: 10px;
 }
 
 h1
@@ -45,4 +61,17 @@ h1
     position: relative;
     width: 36%;
     text-align: center;
+    margin-left: 20px;
+    color: #37456D;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: auto;
+    display: inline-block;
+    text-align: left;
+	padding: 10px;
+	border-radius: 15px;
+    position: relative;
+    background-color: #37456D;
 }

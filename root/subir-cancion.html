@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Perfil de DJ - Humbucker</title>
-		<!-- Add icon library -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link href="css/estilos.css" rel="stylesheet" type="text/css">
-        <link href="css/estilos-perfildj.css" rel="stylesheet" type="text/css">
-	</head>
-	<body>
-		<header>
+<head>
+	<meta charset="utf-8">
+	<link href="css/estilos.css" rel="stylesheet" type="text/css">
+    <link href="css/estilos-subir.css" rel="stylesheet" type="text/css">
+	<title>Subir canción - Humbucker</title>
+
+</head>
+<body>
+    <header>
             <nav>
                 <a href="index.html" id="logo">Logo</a>
                 <a href="perfil-dj.html" id="usuario">Usuario</a>
                 <span onclick="openNav()"><img src="imagenes/menu.png" id="menu-imagen"></span>
             </nav>
         </header>
-
-<div id="mySidenav" class="sidenav">
+    
+        <div id="mySidenav" class="sidenav">
 	   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 	   <img src="imagenes/Logotipo_neon.png" alt="logotipo">
         <a href="busqueda.html"> Buscar</a>
-        <a href="subir-cancion.html">Subir canción</a>
         <a href="registro-inicio.html">Cerrar sesion</a>
         	
     </div>
@@ -45,83 +43,35 @@
 	}
 	</script>
 
-		<main>  
-               
 
-        <div class="card">
-        <h1>John Doe</h1>     
-          <img src="imagenes/pagina_DJ.png" id="img">
-          <div class="container">
-                 
-            <p class="title">Dj, compositor y productor</p>
-            <p>Lodres Inglaterra</p>
-            <p class="informacion">Informacion Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum recusandae eos pariatur, quos? Fuga a temporibus harum beatae, saepe cum. Expedita ratione dignissimos officia error sequi dolorum quia impedit ea. </p>
-            <div id="link">
-            <a href="#"><i class="fa fa-dribbble"></i></a> 
-            <a href="https://twitter.com/?lang=es"><i class="fa fa-twitter"></i></a> 
-            <a href="#"><i class="fa fa-linkedin"></i></a> 
-            <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a> 
-            <button>Contacto</button>
-            <button id="Seguir">Seguir</button>
+    <main>
+        <form action="#">
+            <h1>Subir canción:</h1>
+            <input type="text" placeholder="Compositor.">
+            <input type="text" placeholder="Nombre de la canción.">
+            <input type="text" placeholder="Género.">
+            <input type="file" placeholder="Seleccionar archivo..." id="myFile">
+            <textarea id="letra" placeholder="Letra..."></textarea>
+            
+            <div class="derecha">
+                <button onclick="myFunction()">Subir</button>
             </div>
-          </div>
-        </div>
+        </form>
 
-        <div class="card2">
-        <h1>Ultimos lanzamientos</h1>     
-         
-          <div class="container">
-            <div class="objeto">
-            <img src="imagenes/imagen_album_1.png" class="imagen">
-            <div class="informacion">
-            <h3><a href="cancion.html">Nombre de la canción</a></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-            </div>
-            </div>
-            <div class="objeto">
-            <img src="imagenes/imagen_album_2.png" class="imagen">
-            <div class="informacion">
-            <h3><a href="cancion.html">Nombre de la canción</a></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  </p>
-            </div>
-            </div>
-            <div class="objeto">
-            <img src="imagenes/imagen_album_3.png" class="imagen"> 
-            <div class="informacion">
-            <h3><a href="cancion.html">Nombre de la canción</a></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-            </div>
-            </div>
-          </div>
-          </div>
+        <script>
+        function myFunction() {
+            var x = document.getElementById("myFile");
+            x.disabled = true;
+        }
+        </script>
 
-          <div class="card3">
-        <h1>Albums</h1>     
-         
-          <div class="container">
-            <div class="objeto">
-            <img src="imagenes/miniatura_imagen_album_1.png" class="imagen">
-            <div class="informacion">
-            <h3><a href="cancion.html">Nombre de la canción</a></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-            </div>
-            <div class="objeto">
-            <img src="imagenes/miniatura_imagen_album_2.png" class="imagen">
-            <div class="informacion">
-            <h3><a href="cancion.html">Nombre de la canción</a></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-            </div>
-          </div>
-          </div>
-		</main>
-		<footer>
+    </main>
+    
+    <footer>
             <div id="botones-informativos">
                 <button id="btnTerminos">Terminos y condiciones.</button>
                 <button id="btnQuienes">Quienes somos.</button>
             </div>
-
             <div id="Modal-Terminos" class="modal">
                 <div class="modal-box">
                     <div class="modal-header">
@@ -194,5 +144,6 @@
                 }
             </script>
 		</footer>
-	</body>
+
+</body>
 </html>
